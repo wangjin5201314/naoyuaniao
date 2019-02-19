@@ -1,6 +1,24 @@
 
-
-
+@-webkit-keyframes rotate{
+	to{
+		-webkit-transform: rotate(-30deg);
+	}
+}
+@-webkit-keyframes rotate1{
+	to{
+		-webkit-transform: rotate(0deg);
+	}
+}
+@-webkit-keyframes rotate2{
+	to{
+		-webkit-transform:scale(1);
+	}
+}
+@-webkit-keyframes rotate3{
+	to{
+		-webkit-transform:translateY(0px); 
+	}
+}
 .swiper-container{
 	width: 320px;
 	height: 504px;
@@ -8,9 +26,9 @@
 	text-align: center;
 	line-height: 504px;
 	position: relative;
+	transition:all 0.5s;
 	.tu2,.tu3,.tu4,.tu5,.tu6,.tu7,.tu8,.tu9,.tu10,.tu11,.tu12{
 		outline: 1px solid transparent;
-
 	}
 	.tu1 {
 		width: 320px;
@@ -25,6 +43,9 @@
 	    top: 0;
 	    width: 98%;
 	    height: 100%;
+		transform:rotate(180deg); 
+		-webkit-animation: rotate1 1s linear 0s 1;
+		animation-fill-mode : forwards;
 	}
 	.tu3{
 		position: absolute;
@@ -32,6 +53,9 @@
 	    top: 38px;
 	    width: 285px;
 	    height: 449px;
+		transform:rotate(-180deg); 
+		-webkit-animation: rotate1 1s linear 0s 1;
+		animation-fill-mode : forwards;
 	}
 	.tu4{
 		position: absolute;
@@ -39,6 +63,9 @@
 	    top: 48px;
 	    width: 249px;
 	    height: 414px;
+		transform:scale(0.3);
+		-webkit-animation: rotate2 1s linear 0.3s 1;
+		animation-fill-mode : forwards;
 	}
 	.tu5{
 		position: absolute;
@@ -47,6 +74,9 @@
 	    width: 141px;
 	    height: 298px;
 		z-index: 50;
+		transform:translateY(-300px); 
+		-webkit-animation: rotate3 1s linear 0.3s 1;
+		animation-fill-mode : forwards;
 	}
 	.tu6{
 		position: absolute;
@@ -55,6 +85,9 @@
 	    width: 141px;
 	    height: 298px;
 		z-index: 50;
+		transform:translateY(-300px); 
+		-webkit-animation: rotate3 1s linear 0.3s 1;
+		animation-fill-mode : forwards;
 	}
 	.tu7{
 		position: absolute;
@@ -91,6 +124,9 @@
 		bottom: 0px;
 		width: 253px;
 		height: 254px;
+		z-index: 52;
+		transform:rotate(30deg); 
+		-webkit-animation: rotate 1s ease-in-out alternate infinite;
 	}
 	.tu12{
 		position: absolute;
@@ -98,6 +134,53 @@
 		bottom: 15px;
 		width: 20px;
 		height: 15px;
+	}
+	.tu13{
+		position: absolute;
+		left: 22px;
+		top: 38px;
+		width: 285px;
+		height: 449px;
+		z-index: 51;
+	}
+	.tu14{
+		position: absolute;
+		right: 10px;
+		top: 10px;
+		width: 30px;
+		height: 30px;
+		z-index: 52;
+	}
+	.tu15{
+		position: absolute;
+		right: 10px;
+		top: 10px;
+		width: 35px;
+		height: 35px;
+		z-index: 51;
+		transform:rotate(360deg); 
+		-webkit-animation: rotate 0.5s linear 0s infinite;
+	}
+	.tu16{
+		position: absolute;
+		right: 74px;
+		top: 88px;
+		width: 54px;
+		height: 100px;
+	}
+	.tu17{
+		position: absolute;
+		right: 66px;
+		top: 203px;
+		width: 70px;
+		height: 90px;
+	}
+	.tu18{
+		position: absolute;
+		right: 75px;
+		top: 300px;
+		width: 57px;
+		height: 100px;
 	}
 	.text{
 		opacity: 1;

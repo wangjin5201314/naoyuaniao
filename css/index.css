@@ -1,10 +1,23 @@
+@-webkit-keyframes rotate {
+  to {
+    -webkit-transform: rotate(-30deg); } }
+@-webkit-keyframes rotate1 {
+  to {
+    -webkit-transform: rotate(0deg); } }
+@-webkit-keyframes rotate2 {
+  to {
+    -webkit-transform: scale(1); } }
+@-webkit-keyframes rotate3 {
+  to {
+    -webkit-transform: translateY(0px); } }
 .swiper-container {
   width: 320px;
   height: 504px;
   font-size: 100px;
   text-align: center;
   line-height: 504px;
-  position: relative; }
+  position: relative;
+  transition: all 0.5s; }
   .swiper-container .tu2, .swiper-container .tu3, .swiper-container .tu4, .swiper-container .tu5, .swiper-container .tu6, .swiper-container .tu7, .swiper-container .tu8, .swiper-container .tu9, .swiper-container .tu10, .swiper-container .tu11, .swiper-container .tu12 {
     outline: 1px solid transparent; }
   .swiper-container .tu1 {
@@ -18,33 +31,48 @@
     left: 5px;
     top: 0;
     width: 98%;
-    height: 100%; }
+    height: 100%;
+    transform: rotate(180deg);
+    -webkit-animation: rotate1 1s linear 0s 1;
+    animation-fill-mode: forwards; }
   .swiper-container .tu3 {
     position: absolute;
     left: 22px;
     top: 38px;
     width: 285px;
-    height: 449px; }
+    height: 449px;
+    transform: rotate(-180deg);
+    -webkit-animation: rotate1 1s linear 0s 1;
+    animation-fill-mode: forwards; }
   .swiper-container .tu4 {
     position: absolute;
     left: 32px;
     top: 48px;
     width: 249px;
-    height: 414px; }
+    height: 414px;
+    transform: scale(0.3);
+    -webkit-animation: rotate2 1s linear 0.3s 1;
+    animation-fill-mode: forwards; }
   .swiper-container .tu5 {
     position: absolute;
     left: -50px;
     top: -100px;
     width: 141px;
     height: 298px;
-    z-index: 50; }
+    z-index: 50;
+    transform: translateY(-300px);
+    -webkit-animation: rotate3 1s linear 0.3s 1;
+    animation-fill-mode: forwards; }
   .swiper-container .tu6 {
     position: absolute;
     right: -40px;
     top: -125px;
     width: 141px;
     height: 298px;
-    z-index: 50; }
+    z-index: 50;
+    transform: translateY(-300px);
+    -webkit-animation: rotate3 1s linear 0.3s 1;
+    animation-fill-mode: forwards; }
   .swiper-container .tu7 {
     position: absolute;
     left: 105px;
@@ -75,13 +103,57 @@
     left: -5px;
     bottom: 0px;
     width: 253px;
-    height: 254px; }
+    height: 254px;
+    z-index: 52;
+    transform: rotate(30deg);
+    -webkit-animation: rotate 1s ease-in-out alternate infinite; }
   .swiper-container .tu12 {
     position: absolute;
     left: 45%;
     bottom: 15px;
     width: 20px;
     height: 15px; }
+  .swiper-container .tu13 {
+    position: absolute;
+    left: 22px;
+    top: 38px;
+    width: 285px;
+    height: 449px;
+    z-index: 51; }
+  .swiper-container .tu14 {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    z-index: 52; }
+  .swiper-container .tu15 {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 35px;
+    height: 35px;
+    z-index: 51;
+    transform: rotate(360deg);
+    -webkit-animation: rotate 0.5s linear 0s infinite; }
+  .swiper-container .tu16 {
+    position: absolute;
+    right: 74px;
+    top: 88px;
+    width: 54px;
+    height: 100px; }
+  .swiper-container .tu17 {
+    position: absolute;
+    right: 66px;
+    top: 203px;
+    width: 70px;
+    height: 90px; }
+  .swiper-container .tu18 {
+    position: absolute;
+    right: 75px;
+    top: 300px;
+    width: 57px;
+    height: 100px; }
   .swiper-container .text {
     opacity: 1;
     border-style: solid;
